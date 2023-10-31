@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sequencia", "..\Sequencia\S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Soma_matrix", "..\Soma_matrix\Soma_matrix.vcxproj", "{9E3D7521-6C58-4428-AED2-26651618A1D0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "impar_par", "..\impar_par\impar_par.vcxproj", "{E3A26096-6D18-43F0-A17A-977F1B8548AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{9E3D7521-6C58-4428-AED2-26651618A1D0}.Release|x64.Build.0 = Release|x64
 		{9E3D7521-6C58-4428-AED2-26651618A1D0}.Release|x86.ActiveCfg = Release|Win32
 		{9E3D7521-6C58-4428-AED2-26651618A1D0}.Release|x86.Build.0 = Release|Win32
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Debug|x64.ActiveCfg = Debug|x64
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Debug|x64.Build.0 = Debug|x64
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Debug|x86.Build.0 = Debug|Win32
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Release|x64.ActiveCfg = Release|x64
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Release|x64.Build.0 = Release|x64
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Release|x86.ActiveCfg = Release|Win32
+		{E3A26096-6D18-43F0-A17A-977F1B8548AE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
