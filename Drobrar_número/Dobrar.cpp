@@ -17,8 +17,10 @@ int main() {
 	setlocale(LC_ALL, "Portuguese");
 	int number;
 
-	cout << "Digite um numero inteiro";
+	cout << "Digite um numero inteiro: ";
 	cin >> number;
+
+	cout << "O dobro de " << number << " é ";
 
 	cout << dobrar_numero(number);
 	return 0;
