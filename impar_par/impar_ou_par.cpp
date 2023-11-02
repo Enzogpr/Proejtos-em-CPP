@@ -16,11 +16,9 @@ int main() {
 		cin >> numero;
 		num.push_back(numero);
 
-		if (numero %2 == 0){
+		if (numero % 2 == 0) {
 			par++;
-		}
-		else
-		{
+		}else{
 			impar++;
 		}
 	}

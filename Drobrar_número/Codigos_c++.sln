@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "impar_par", "..\impar_par\i
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrix_transporta", "..\matrix_transporta\matrix_transporta.vcxproj", "{3DB4AF26-8F14-4DA0-AA37-16A621898A93}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nome_idade", "..\Nome_idade\Nome_idade.vcxproj", "{CFFA83C5-72A9-4676-B423-B5D006A23F02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{3DB4AF26-8F14-4DA0-AA37-16A621898A93}.Release|x64.Build.0 = Release|x64
 		{3DB4AF26-8F14-4DA0-AA37-16A621898A93}.Release|x86.ActiveCfg = Release|Win32
 		{3DB4AF26-8F14-4DA0-AA37-16A621898A93}.Release|x86.Build.0 = Release|Win32
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Debug|x64.ActiveCfg = Debug|x64
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Debug|x64.Build.0 = Debug|x64
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Debug|x86.ActiveCfg = Debug|Win32
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Debug|x86.Build.0 = Debug|Win32
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Release|x64.ActiveCfg = Release|x64
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Release|x64.Build.0 = Release|x64
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Release|x86.ActiveCfg = Release|Win32
+		{CFFA83C5-72A9-4676-B423-B5D006A23F02}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
