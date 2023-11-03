@@ -11,6 +11,7 @@ struct funcionario
 };
 
 int main() {
+	setlocale(LC_ALL, "Portuguese");
 	const int qtdfuncionario = 3;
 	funcionario funcionarios[qtdfuncionario];
 	funcionario f;
