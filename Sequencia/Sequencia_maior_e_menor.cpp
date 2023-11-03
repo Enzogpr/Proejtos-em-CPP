@@ -4,7 +4,7 @@
 
 using namespace std;
 
-struct variaveis{
+struct variaveis {
 	int numero;
 	vector<int> num;
 	int maximo, minimo, cont;
@@ -19,7 +19,7 @@ int main() {
 
 	while (v.cont <= 10)
 	{
-		cout << "Digite um número inteiro: " << endl;
+		cout << "Digite um número inteiro: ";
 		cin >> v.numero;
 		v.num.push_back(v.numero);
 	

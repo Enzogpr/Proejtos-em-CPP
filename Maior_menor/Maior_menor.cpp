@@ -8,7 +8,7 @@ int main() {
 
 	double number1, number2;
 
-	cout << ("Digite o primeiro número:  ");
+	cout << "Digite o primeiro número:  ";
 	cin >> number1;
 	cout << ("Digite o segundo número:  ");
 	cin >> number2;
@@ -25,9 +25,5 @@ int main() {
 	{
 		cout << "Os números são iguais";
 	}
-
-
-
-
 	return 0;
 }

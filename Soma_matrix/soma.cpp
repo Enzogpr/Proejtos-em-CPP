@@ -13,12 +13,9 @@ setlocale(LC_ALL, "Portuguese");
 		for (c = 0; c < 3; c++) {
 			cout << "Informe o valor da matrix " << "[" << l << "]" << "[" << c << "]: ";
 			cin >> matrix[l][c];
-			
-		};
-	}
 
-	system("pause");
-	system("cls");
+		};
+	} system("pause"); system("cls");
 
 	cout << "\tA matrix[3][3] fica: \n";
 	cout << "\n";
