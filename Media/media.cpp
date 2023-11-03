@@ -21,7 +21,7 @@ int main() {
 	for (int i = 0; i < numalunos; i++)
 	{
 		cout << "Digite o nome do aluno" << i + 1 << ": ";
-		cin >> alunos[i].nome;
+		getline(cin, alunos[i].nome);
 		cout << "Digite a 1° nota do aluno" << i + 1 << ": ";
 		cin >> alunos[i].n1;
 		cout << "Digite a 2° nota do aluno" << i + 1 << ": ";

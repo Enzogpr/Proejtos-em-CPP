@@ -15,7 +15,6 @@ int main() {
 	variaveis v;
 
 	cout << "Qual o seu nome? ";
-	cin.ignore();
 	getline(cin, v.nome);
 
 	
