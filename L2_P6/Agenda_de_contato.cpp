@@ -46,7 +46,7 @@ void lista_contatos() {
 			cout << "Nenhum contato cadastrado.\n";
 			return;
 		}
-	cout << "Contatos cadastradas: \n";
+	cout << "Contatos cadastrados: \n";
 	for (const auto& agenda : contato)
 	{
 		cout << "Nome: " << agenda.nome << "\n";
@@ -56,7 +56,7 @@ void lista_contatos() {
 
 }
 
-void pesquisar_conato() {
+void pesquisar_contato() {
 	setlocale(LC_ALL, "Portuguese");
 	string contatop;
 	agenda ag;
@@ -113,7 +113,7 @@ int main() {
 			break;
 		case 3:
 			system("cls");
-			pesquisar_conato();
+			pesquisar_contato();
 			system("pause");
 			break;
 
