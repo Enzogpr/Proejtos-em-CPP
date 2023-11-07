@@ -32,7 +32,8 @@ int main() {
 	{
 		if (funcionarios[i].ht > 40)
 		{
-			f.salario = (funcionarios[i].vh * 40) + ( (funcionarios[i].vh +( funcionarios[i].vh * 0.5)) * (funcionarios[i].ht - 40));
+			f.salario = (funcionarios[i].vh * 40) + ( (funcionarios[i].vh +
+				( funcionarios[i].vh * 0.5)) * (funcionarios[i].ht - 40));
 		}
 		else
 		{
@@ -41,7 +42,7 @@ int main() {
 
 		cout << "Nome: " << funcionarios[i].nome << endl;
 		cout << "Horas trabalhadas: " << funcionarios[i].ht << endl;
-		cout << "Valor da hora: RS" << funcionarios[i].vh << endl;
+		cout << "Valor da hora: R$" << funcionarios[i].vh << endl;
 		cout << "Salario: R$" << f.salario << endl;
 		cout << "------------------------------------------\n";
 	}

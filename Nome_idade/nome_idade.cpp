@@ -23,7 +23,8 @@ int main() {
 
 	system("cls");
 
-	cout << "Seu nome é: " << v.nome << " e sua idade é: " << v.idade;
+	cout << "Seu nome é: " << v.nome << " e sua idade é: ";
+		cout << v.idade;
 
 	return 0;
 }

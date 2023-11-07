@@ -16,13 +16,14 @@ struct agenda
 vector <agenda> contato;
 
 void cadastrar_pessoa() {
-	 setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese");
 	 agenda agenda;
 
 	 cout << "Digite o nome: ";
 	 cin.ignore();
 	 getline(cin, agenda.nome);
-	 transform(agenda.nome.begin(), agenda.nome.end(), agenda.nome.begin(), ::toupper);
+	 transform(agenda.nome.begin(), agenda.nome.end(), agenda.nome.begin(), 
+	 ::toupper);
 	 cout << "\nDigite o DD: ";
 	 cin >> agenda.dd;
 	 
@@ -37,6 +38,7 @@ void cadastrar_pessoa() {
 }
 
 void lista_contatos() {
+	setlocale(LC_ALL, "Portuguese");
 	agenda agenda;
 
 		if (contato.empty())
@@ -55,6 +57,7 @@ void lista_contatos() {
 }
 
 void pesquisar_conato() {
+	setlocale(LC_ALL, "Portuguese");
 	string contatop;
 	agenda ag;
 
@@ -84,6 +87,7 @@ void pesquisar_conato() {
 }
 
 int main() {
+	setlocale(LC_ALL, "Portuguese");
 	int escolha;
 
 	do

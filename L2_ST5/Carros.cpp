@@ -13,11 +13,9 @@ struct carro
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	const int qtdcarro = 3;
+	const int qtdcarro = 10;
 	carro carros[qtdcarro];
 	carro c;
-
-
 
 	for (int i = 0; i < qtdcarro; i++)
 	{
@@ -29,10 +27,7 @@ int main() {
 		cout << "Ano: ";
 		cin >> carros[i].ano;
 		cout << "Preço: ";
-		cin >> carros[i].preço;
-	
-		
-		
+		cin >> carros[i].preço;	
 	}
 
 	carro carromaisantigo = carros[0];
