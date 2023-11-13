@@ -32,8 +32,38 @@ double fahrenheitParaCelsius(double temperatura) {
 int main() {
 	teperatura t;
 
-	cout << "Digite a temperatura atual: ";
-	cin >> t.temperatura;
+
+	cout << "Digite se quer converter para Celsius [C] ou para Fahrenheit [F]: ";
+	cin >> t.unidade;
+
+	switch (t.unidade)
+	{
+	case 'c'||'C':
+
+		cout << "Digite a temperatura em Fahrenheit: ";
+		cin >> t.temperatura;
+
+		cout << "A temperatura convertida para Celsius fica: " << fahrenheitParaCelsius(t.temperatura) << "°"
+		break;
+
+	case 'f'||'F':
+	
+		   cout << "Digite a temperatura em Celsius: ";
+		   cin >> t.temperatura;
+
+		   cout << "A temperatura convertida para Fahrenheit fica: " << celsiusParaFahrenheit(t.temperatura) << "°"
+		  break;
+
+	default: 
+		system("cls");
+		cout << "Escolha invalida";
+		break;
+	} 
+	return 0;
+	}
+	
+	
+	
 
 
 
