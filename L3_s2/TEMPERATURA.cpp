@@ -36,22 +36,23 @@ int main() {
 	cout << "Digite se quer converter para Celsius [C] ou para Fahrenheit [F]: ";
 	cin >> t.unidade;
 
-	switch (t.unidade)
-	{
-	case 'c'||'C':
+	
+	switch (toupper(t.unidade)){
+
+	case 'C':
 
 		cout << "Digite a temperatura em Fahrenheit: ";
 		cin >> t.temperatura;
 
-		cout << "A temperatura convertida para Celsius fica: " << fahrenheitParaCelsius(t.temperatura) << "°"
+		cout << "A temperatura convertida para Celsius fica: " << fahrenheitParaCelsius(t.temperatura) << "°";
 		break;
 
-	case 'f'||'F':
+		case 'F':
 	
 		   cout << "Digite a temperatura em Celsius: ";
 		   cin >> t.temperatura;
 
-		   cout << "A temperatura convertida para Fahrenheit fica: " << celsiusParaFahrenheit(t.temperatura) << "°"
+		   cout << "A temperatura convertida para Fahrenheit fica: " << celsiusParaFahrenheit(t.temperatura) << "°";
 		  break;
 
 	default: 
@@ -65,8 +66,3 @@ int main() {
 	
 	
 
-
-
-
-	return 0
-}
