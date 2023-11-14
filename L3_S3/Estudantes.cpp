@@ -15,7 +15,7 @@ struct estudantes
 
 vector <estudantes> estudante;
 
-void cadastrar_pessoa() {
+void adicionarEstudante() {
 	setlocale(LC_ALL, "Portuguese");
 	estudantes est;
 
@@ -34,53 +34,58 @@ void cadastrar_pessoa() {
 	cout << "\n\nAluno adicionado com sucesso" << endl;
 }
 
-void lista_contatos() {
+void lista_estudantes() {
 	setlocale(LC_ALL, "Portuguese");
-	agenda agenda;
+	estudantes est;
 
-	if (contato.empty())
+	if (estudante.empty())
 	{
 		cout << "Nenhum contato cadastrado.\n";
 		return;
 	}
 	cout << "Contatos cadastrados: \n";
-	for (const auto& agenda : contato)
+	for (const auto& est : estudante)
 	{
 		cout << "Nome: " << est.nome << "\n";
-		cout << "Telefone: (" << est.dd << ") " << est.telefone << "\n";
-		cout << "E-mail: " << est.email << "\n";
+		cout << "Idade: " << est.idade << "\n";
+		cout << "Matricula: " << est.matricula << "\n";
+		cout << "-------------------------------------\n";
 	}
 
 }
 
-void pesquisar_contato() {
+void buscarEstudante() {
 	setlocale(LC_ALL, "Portuguese");
-	string contatop;
-	agenda ag;
+	string nome;
+	estudantes est;
 
-	if (contato.empty())
+	if (estudante.empty())
 	{
-		cout << "Nenhum contato cadastrado.\n";
+		cout << "Nenhum estudante matriculado.\n";
 		return;
 	}
 
-	cout << "Digite o nome do contato: \n";
+	cout << "Digite o nome do estudante: \n";
 	cin.ignore();
-	getline(cin, contatop);
-	transform(contatop.begin(), contatop.end(), contatop.begin(), ::toupper);
+	getline(cin, nome);
+	transform(nome.begin(), nome.end(), nome.begin(), ::toupper);
 
-	for (const auto& ag : contato)
+	for (const auto& est : estudante)
 	{
-		if (ag.nome == contatop)
+		if (est.nome == nome)
 		{
-			cout << "Nome: " << ag.nome << "\n";
-			cout << "Telefone: (" << ag.dd << ") " << ag.telefone << "\n";
-			cout << "E-mail: " << ag.email << "\n";
+			system("cls");
+			cout << "Aluno encontrado: " << endl;
+			cout << "Nome: " << est.nome << "\n";
+
+			cout << "Idade: " << est.idade << "\n" ;
+
+			cout << "Matricula: " << est.matricula << "\n";
 			return;
 		}
 	}
 
-	cout << "Contato inexistente";
+	cout << "Aluno inexistente";
 }
 
 int main() {
@@ -92,25 +97,25 @@ int main() {
 
 		system("cls");
 		cout << "--------------Agenda de contatos--------------" << endl;
-		cout << "[1] Cadastrar     [2]Listar        [3] Pesquisar     [4] Sair" << endl;
+		cout << "[1] Matricular    [2]Listar        [3] Pesquisar     [4] Sair" << endl;
 		cin >> escolha;
 
 		switch (escolha) {
 
 		case 1:
 			system("cls");
-			cadastrar_pessoa();
+			adicionarEstudante();
 			system("pause");
 			break;
 
 		case 2:
 			system("cls");
-			lista_contatos();
+			lista_estudantes();
 			system("pause");
 			break;
 		case 3:
 			system("cls");
-			pesquisar_contato();
+			buscarEstudante();
 			system("pause");
 			break;
 
