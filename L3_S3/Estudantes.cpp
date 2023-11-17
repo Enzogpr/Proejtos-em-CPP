@@ -96,7 +96,7 @@ int main() {
 	{
 
 		system("cls");
-		cout << "--------------Agenda de contatos--------------" << endl;
+		cout << "--------------Matricula de alunos--------------" << endl;
 		cout << "[1] Matricular    [2]Listar        [3] Pesquisar     [4] Sair" << endl;
 		cin >> escolha;
 
