@@ -5,9 +5,9 @@ using namespace std;
 
 struct carta
 {
-    std::string nome;
+    string nome;
     int idade;
-    std::vector<std::string> desejos;
+    vector<string> desejos;
 };
 
 void lista_de_desejos(carta& carta, const string& desejo) {
@@ -41,9 +41,9 @@ int main() {
 
     cout << "Lista de Desejos:\n";
     for (const auto& desejo : carta.desejos) {
-        std::cout << "- " << desejo << "\n";
+        cout << "- " << desejo << "\n";
     }
-    std::cout << "-----------------------------------\n";
+    cout << "-----------------------------------\n";
 
     return 0;
 }
